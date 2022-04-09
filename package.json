@@ -1,0 +1,23 @@
+{
+  "name": "course-project_geekfuel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel start index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liz16k/course-project_geekfuel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liz16k/course-project_geekfuel/issues"
+  },
+  "homepage": "https://github.com/Liz16k/course-project_geekfuel#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}

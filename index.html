@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Geekfuel</title>
 </head>
 <body>
   <header>
     <div class="header__wrap">
       <nav class="header__catalog nav">
-        <a href="#">tee club</a>
-        <a href="#">shop</a>
-        <a href="#">ghostbusters</a>
-        <a href="#">🎁gift</a>
+        <a class="nav-link" href="#">tee club</a>
+        <a class="nav-link" href="#">shop</a>
+        <a class="nav-link" href="#">ghostbusters</a>
+        <a class="nav-link" href="#">🎁gift</a>
       </nav>
       <div class="header__logo">
         <a href="#">
@@ -21,10 +23,10 @@
         </a>
       </div>
       <nav class="header__user nav">
-        <a href="#">login</a>
-        <a href="#"><img src="assets/svg/search.svg" alt=""></a>
-        <a href="#"><img src="assets/svg/wish.svg" alt=""></a>
-        <a href="#"><img src="assets/svg/buy.svg" alt=""></a>
+        <a class="nav-link" href="#">login</a>
+        <a class="nav-link" href="#"><img src="assets/svg/search.svg" alt=""></a>
+        <a class="nav-link" href="#"><img src="assets/svg/wish.svg" alt=""></a>
+        <a class="nav-link" href="#"><img src="assets/svg/buy.svg" alt=""></a>
       </nav>
     </div>
   </header>
@@ -34,8 +36,8 @@
         <div class="promo__wrap">
           <div class="promo__description">
             <h1>get your geek on!</h1>
-            <h5>Come on in to score your fan favorite tees, figures, and geeky essentials you won't find anywhere else!
-            </h5>
+            <p>Come on in to score your fan favorite tees, figures, and geeky essentials you won't find anywhere else!
+            </p>
             <a class="btn btn-inv" href="#">shop all</a>
           </div>
         </div>
@@ -78,17 +80,17 @@
           <div class="geek-on__blocks">
             <div class="geek-on__block">
               <img src="assets/img/get-1.png" alt="">
-              <h4>Sed vel leo sed turpis</h4>
+              <h3>Sed vel leo sed turpis</h3>
               <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
             </div>
             <div class="geek-on__block">
               <img src="assets/img/get-2.png" alt="">
-              <h4>lobortis pulvinar blandit</h4>
+              <h3>lobortis pulvinar blandit</h3>
               <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
             </div>
             <div class="geek-on__block">
               <img src="assets/img/get-3.png" alt="">
-              <h4>vel semper neque sagittis quis</h4>
+              <h3>vel semper neque sagittis quis</h3>
               <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
             </div>
           </div>
@@ -97,7 +99,7 @@
       <section class="gallery">
         <div class="gallery__wrap">
           <div class="gallery__section">
-            <h4>good for</h4>
+            <h5>good for</h5>
             <h2>every day</h2>
             <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
             <div class="img-subsection">
@@ -146,14 +148,14 @@
       <section class="plans">
         <div class="plans__wrap">
           <h2>Select a plan</h2>
-          <h6>New subscribers receive our GEEK FUEL BOX ($122 + value) as their first box!</h6>
+          <p>New subscribers receive our <b>GEEK FUEL BOX</b> ($122 + value) as their first box!</p>
           <div class="plans__cards">
             <div class="plans__card">
-              <h5>Month-to-Month</h5>
-              <h3>$26</h3><span>/ month</span>
+              <h3>Month-to-Month</h3>
+              <span>$26</span><p>/ month</p>
               <img src="assets/img/price-1.png" alt="">
-              <h6>Billed monthly</h6>
-              <ul>
+              <p  class="small">Billed monthly</p>
+              <ul  class="small">
                 <li>Delivered monthly</li>
                 <li>Save $18 compared to monthly</li>
                 <li>Free bonus box ($125 value)</li>
@@ -161,11 +163,11 @@
               <a class="btn" href="">select a plan</a>
             </div>
             <div class="plans__card">
-              <h5>Month-to-Month</h5>
-              <h3>$26</h3><span>/ month</span>
+              <h3>Month-to-Month</h3>
+              <span>$26</span><p>/ month</p>
               <img src="assets/img/price-2.png" alt="">
-              <h6>Prepay $72 for 3 boxes</h6>
-              <ul>
+              <p class="small">Prepay $72 for 3 boxes</p>
+              <ul class="small">
                 <li>Delivered monthly</li>
                 <li>Save $18 compared to monthly</li>
                 <li>Free bonus box ($125 value)</li>
@@ -173,11 +175,11 @@
               <a class="btn" href="">select a plan</a>
             </div>
             <div class="plans__card">
-              <h5>Month-to-Month</h5>
-              <h3>$26</h3><span>/ month</span>
+              <h3>Month-to-Month</h3>
+              <span>$26</span><p>/ month</p>
               <img src="assets/img/price-3.png" alt="">
-              <h6>Prepay $138 for 6 boxes</h6>
-              <ul>
+              <p class="small">Prepay $138 for 6 boxes</p>
+              <ul class="small">
                 <li>Delivered monthly</li>
                 <li>Save $18 compared to monthly</li>
                 <li>Free bonus box ($125 value)</li>
@@ -185,8 +187,8 @@
               <a class="btn" href="">select a plan</a>
             </div>
           </div>
-          <h6>Your plan automatically renews.
-            You can easily skip, pause, or cancel your subscription at any time.</h6>
+          <p>Your plan automatically renews.
+            <b>You can easily skip, pause, or cancel your subscription at any time.</b>></p>
         </div>
       </section>
       <section class="first-open">
@@ -202,7 +204,7 @@
       </section>
       <section class="shop-all">
         <div class="shop-all__wrap">
-          <h4>good for</h4>
+          <h5>good for</h5>
           <h2>every day</h2>
           <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
           <a href="" class="btn"></a>
@@ -215,8 +217,8 @@
             <div class="recent-items__card">
               <img src="assets/img/recent-2.png" alt="">
               <button class="add-to-cart">add to cart</button>
-              <h4>Free Rivers Work Better!</h4>
-              <h6>$26.99 USD</h6>
+              <h3>Free Rivers Work Better!</h3>
+              <p class="small">$26.99 USD</p>
               <div class="recent-items__card-colors">
                 <div class="color"></div>
                 <div class="color"></div>
@@ -227,8 +229,8 @@
             <div class="recent-items__card">
               <img src="assets/img/recent-1.png" alt="">
               <button class="add-to-cart">add to cart</button>
-              <h4>Free Rivers Work Better!</h4>
-              <h6>$26.99 USD</h6>
+              <h3>Free Rivers Work Better!</h3>
+              <p class="small">$26.99 USD</p>
               <div class="recent-items__card-colors">
                 <div class="color"></div>
                 <div class="color"></div>
@@ -239,8 +241,8 @@
             <div class="recent-items__card">
               <img src="assets/img/recent-3.png" alt="">
               <button class="add-to-cart">add to cart</button>
-              <h4>Free Rivers Work Better!</h4>
-              <h6>$26.99 USD</h6>
+              <h3>Free Rivers Work Better!</h3>
+              <p class="small">$26.99 USD</p>
               <div class="recent-items__card-colors">
                 <div class="color"></div>
                 <div class="color"></div>
@@ -256,15 +258,15 @@
           <h5>WE LOVE A GOOD COMPLIMENT</h5>
           <div class="reviews__block">
             <div class="review">
-              <p>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
+              <p class="large">“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
               <h5 class="review__author">olivia j</h5>
             </div>
             <div class="review">
-              <p>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
+              <p class="large">“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
               <h5 class="review__author">olivia j</h5>
             </div>
             <div class="review">
-              <p>“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
+              <p class="large">“Nam accumsan est vel neque varius, a gravida diam dignissim. Maecenas eu dui porta, pellentesque nisi id, bibendum erat. Proin condimentum lacinia tellus.”</p>
               <h5 class="review__author">olivia j</h5>
             </div>
           </div>
@@ -298,17 +300,17 @@
         <img src="assets/svg/logo-dark-theme.svg" alt="">
       </div>
       <nav class="footer__sitemap">
-        <a href="#">bundles</a>
-        <a href="#">exclusive tees</a>
-        <a href="#">mondo</a>
-        <a href="#">collectibles</a>
-        <a href="#">tee club</a>
-        <a href="#">ghostbusters</a>
-        <a href="#">gift</a>
-        <a href="#">login</a>
+        <a class="nav-link" href="#">bundles</a>
+        <a class="nav-link" href="#">exclusive tees</a>
+        <a class="nav-link" href="#">mondo</a>
+        <a class="nav-link" href="#">collectibles</a>
+        <a class="nav-link" href="#">tee club</a>
+        <a class="nav-link" href="#">ghostbusters</a>
+        <a class="nav-link" href="#">gift</a>
+        <a class="nav-link" href="#">login</a>
       </nav>
       <div class="footer__contact">
-        <h4>Sign up for our news & updates</h4>
+        <p>Sign up for our news & updates</p>
         <form class="footer__subscribe-form" action="">
           <input type="email" placeholder="Enter your email to subscribe">
         </form>
@@ -322,8 +324,8 @@
       </div>
     </div>
     <div class="footer__legal-info">
-      <span>© 2021 Geek Fuel, LLC. All Rights Reserved.</span>
-      <span>Privacy Policy  |  Terms & Conditions</span>
+      <p>© 2021 Geek Fuel, LLC. All Rights Reserved.</p>
+      <p>Privacy Policy  |  Terms & Conditions</p>
     </div>
   </footer>
 </body>
