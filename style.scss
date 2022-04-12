@@ -34,6 +34,16 @@ select {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #FF5050;
+  background-color: #FF5050;
+  color: #ffffff;
+}
+
 a {
   outline: none;
   text-decoration: none;
@@ -120,6 +130,31 @@ li + li {
   }
 }
 
+.btn:hover {
+  border: 1px solid #FF5050;
+  color: #FF5050;
+  background-color: #fff;
+  box-shadow: 10px 10px 0 #FF5050;
+  transition: all ease 0.5s;
+}
+.opacity:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.btn-inv:hover {
+  box-shadow: 10px 10px 0 #fff;
+  transition: all ease 0.4s;
+  border: 1px solid #ffffff;
+  background-color: #FF5050;
+  color: #ffffff;
+}
+
+li:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
 main {
   margin: 0 auto;
 }
@@ -149,6 +184,19 @@ header {
   justify-content: space-around;
 }
 
+.header__catalog .nav-link:hover {
+  padding-bottom: 5px;
+  border-bottom: 4px solid #FF5050;
+}
+
+.nav-link:hover  {
+  color: #FF5050;
+}
+
+.header__catalog .nav-link:hover  {
+  color: #0D0D0D;
+}
+
 .nav a + a {
   margin-left: 50px;
 }
@@ -171,6 +219,7 @@ header {
 .promo__description {
   max-width: 400px;
   height: 100%;
+  animation: entrance 1s;
 
   h1 {
     line-height: 90px;
@@ -250,6 +299,9 @@ header {
 }
 
 .geek-on {
+  h2 {
+    margin-bottom: 60px;
+  }
   background-color: #F8F8F8;
 }
 
@@ -365,6 +417,7 @@ header {
   background-color: #fff;
   max-width: 386px;
   padding: 40px 40px 56px;
+  transition: all ease 0.2s;
 
   p:first-of-type {
     font-size: 46px;
@@ -385,6 +438,11 @@ header {
       color: #0D0D0D;
       opacity: 0.5;
     }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 0px #23242725;
   }
 
   img + p {
@@ -469,6 +527,7 @@ header {
 
 .recent-items__cards {
   background-color: #fff;
+  margin: 0;
 }
 
 .recent-items__card {
@@ -477,13 +536,8 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  h3 {
-    margin: 30px 0 16px;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
+  h3 {margin: 30px 0 16px;}
+  p {margin-bottom: 15px;}
 
   .recent-items__card-colors {
     display: flex;
@@ -525,7 +579,8 @@ header {
     .add-to-cart {
       bottom: 80px;
     }
-  }  
+  }
+  transition: all ease 0.6s;
 }
 
 .reviews {
@@ -565,6 +620,10 @@ header {
   display: flex;
   justify-content: center;
   gap: 70px;
+  img:hover {
+    transform: scale(1.05);
+    transition: transform ease 0.4s;
+  }
 }
 
 footer {
@@ -618,4 +677,16 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
