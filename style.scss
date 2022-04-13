@@ -103,7 +103,7 @@ li + li {margin-top: 20px;}
   color: $black;
 }
 
-.gift::before {
+.gift::before, .li-gift li:before {
   content: "🎁";
   padding-right: 2px;
 }
@@ -131,16 +131,80 @@ li + li {margin-top: 20px;}
   }
 }
 
+/*BURGER MENU*/
+.burger {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: block;
+  z-index: 1;
+}
+
+#burger {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+
+  &:checked ~ ul {
+    transform: none;
+  }
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  &:checked ~ span {
+    opacity: 1;
+    background-color: $accent;
+  }
+}
+#menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 45px;
+  
+  background-color: $white;
+  transform: translate(-150%, 0);
+  transition: transform ease 0.5s;
+}
+#menu li
+{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.086);
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.burger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  position: relative;
+  
+  background: #0d0d0d;
+  border-radius: 3px;
+  
+  z-index: 1;
+  transform-origin: 4px 0px;
+}
+
+.burger {
+  display: none;
+}
+
 .btn:hover {
   border: 1px solid $accent;
   color: $accent;
   background-color: #fff;
   box-shadow: 10px 10px 0 $accent;
-  transition: all ease 0.5s;
-}
-
-button[type="submit"]:hover {
-  
+  transition: all ease 0.5s; 
 }
 
 .opacity:hover {
@@ -156,6 +220,10 @@ button[type="submit"]:hover {
   background-color: $accent;
   color: $white;
 }
+img:hover {
+  transform: scale(1.1);
+  transition: transform ease 0.4s;
+}
 
 li:hover {
   opacity: 1;
@@ -164,8 +232,8 @@ li:hover {
 
 [class*="wrap"]:not([class*="header"]) {
   margin: 0 auto;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
   max-width: 1220px; 
 }
 
@@ -195,6 +263,7 @@ header {
 }
 
 .header__wrap {
+  padding: 0 25px;
   position: relative;
   height: 100px;
   display: flex;
@@ -203,6 +272,7 @@ header {
 }
 
 .header__nav {
+  padding-right: 15px;
   position: relative;
   max-width: 1920px;
   width: 90%;
@@ -227,7 +297,8 @@ header {
 }
 
 .nav-right a:hover,
-.footer__sitemap a:hover {
+.footer__sitemap a:hover,
+.burger a:hover {
   color: $accent;
 }
 
@@ -258,7 +329,6 @@ header {
 }
 
 /*OFFERS screen*/
-.offer {height: 400px;}
 
 .offer__wrap {
   display: flex;
@@ -370,7 +440,9 @@ header {
 .gallery__section .btn {grid-area: b;}
 
 .gallery__section {
-  img {width: 100%;}
+  img {
+    width: 100%;
+  }
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr 1fr;
@@ -733,6 +805,9 @@ footer {
     padding: 60px 40px;
     overflow: hidden;
   }
+  .offer__wrap h2 {
+    width: 40%;
+  }
   .promo {background-position: -400px;}
   h2 {font-size: 40px;}
   .card__picture {height: 330px;}
@@ -904,13 +979,8 @@ footer {
     flex-direction: column;
     img {width: 80vw;}
   }
-  .header__logo {display: block;}
+  .header__logo {display: block; transform: scale(0.5) translateX(-80px);}
   .header__nav {justify-content: flex-end;}
-
-  .search {
-    position: absolute;
-    transform: translateX(-63vw);
-  }
 
   .footer__legal-info {
     padding: 15px;
@@ -919,5 +989,9 @@ footer {
 
   .fandoms__items img {
     width: 100px;
+  }
+
+  .burger {
+    display: block;
   }
 }
