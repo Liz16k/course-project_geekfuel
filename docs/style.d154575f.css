@@ -150,7 +150,7 @@ li + li {
   right: 0px;
 }
 [type=submit]::after {
-  content: url("./arrow.c9da0589.svg");
+  content: url("arrow.c9da0589.svg");
 }
 
 .btn:hover {
@@ -229,7 +229,7 @@ header {
 .promo {
   width: 100%;
   height: 600px;
-  background: url("./bg-1.a5200c64.png"), #FF5050;
+  background: url("bg-1.a5200c64.png"), #FF5050;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -280,7 +280,7 @@ header {
   position: relative;
   top: 5px;
   margin-right: 10px;
-  content: url("./tick.7a17dcde.svg");
+  content: url("tick.7a17dcde.svg");
 }
 
 .box__wrap {
@@ -293,19 +293,19 @@ header {
 }
 .box__wrap li:nth-of-type(1)::before {
   margin-right: 5px;
-  content: url("./dec-1.52bfeabb.svg");
+  content: url("dec-1.52bfeabb.svg");
 }
 .box__wrap li:nth-of-type(2)::before {
   margin-right: 5px;
-  content: url("./dec-2.73318f4b.svg");
+  content: url("dec-2.73318f4b.svg");
 }
 .box__wrap li:nth-of-type(3)::before {
   margin-right: 5px;
-  content: url("./dec-3.1003440f.svg");
+  content: url("dec-3.1003440f.svg");
 }
 .box__wrap li:nth-of-type(4)::before {
   margin-right: 5px;
-  content: url("./dec-4.0acb7cbd.svg");
+  content: url("dec-4.0acb7cbd.svg");
 }
 
 .box__pictures img:nth-of-type(1) {
@@ -502,7 +502,7 @@ header {
   line-height: 12px;
 }
 .plans__card ul li::before {
-  content: url("./chk.b73a6d41.png");
+  content: url("chk.b73a6d41.png");
   padding-right: 10px;
 }
 .plans__card .btn {
@@ -515,7 +515,7 @@ header {
   opacity: 0.3;
 }
 .plans__card li.disabled::before {
-  content: url("./none.e62f0f2c.png");
+  content: url("none.e62f0f2c.png");
 }
 
 .first-open {
