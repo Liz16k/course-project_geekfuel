@@ -1,10 +1,10 @@
-/*VARIABLE*/
+/* ......../ variables /.......... */
 $accent: #FF5050;
 $white: #ffffff;
 $black: #0d0d0d;
 $background: #f0f0f0;
 
-/*STYLES RESET*/
+/* ......../ style reset /.......... */
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ a {
   text-transform: uppercase;
 }
 
-/*COMMON STYLES SET*/
+/* ......../ common style set /.......... */
 h1, h2, h3, h4, h5, a, button, span {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -131,7 +131,7 @@ li + li {margin-top: 20px;}
   }
 }
 
-/*BURGER MENU*/
+
 .burger {
   position: absolute;
   top: 38px;
@@ -257,7 +257,7 @@ footer button:hover {
   margin: 0 auto;
 }
 
-/*HEADER*/
+/* ......../ header /.......... */
 header {
   background-color: $white;
 }
@@ -304,7 +304,7 @@ header {
 
 .header__nav a + a {margin-left: 3vw;}
 
-/*FIRST screen*/
+/* ......../ first-screen /.......... */
 .promo {
   width: 100%;
   height: 600px;
@@ -328,7 +328,7 @@ header {
   p {margin-bottom: 2.5vw;}
 }
 
-/*OFFERS screen*/
+/* ......../ offers screen /.......... */
 
 .offer__wrap {
   display: flex;
@@ -357,7 +357,7 @@ header {
   }
 }
 
-/*BOX paragraph*/
+/* ......../ box paragraoh /.......... */
 .box__wrap {
   height: 545px;
   padding: 85px 75px;
@@ -394,7 +394,7 @@ header {
   grid-gap: 1.05vw;
 }
 
-/*GEEK-ON paragraph*/
+/* ......../ geek-on screen /.......... */
 .geek-on {
   h2 {margin-bottom: 3.125vw;}
   background-color: #F8F8F8;
@@ -426,7 +426,7 @@ header {
 
 .block__card {background-color: $white;}
 
-/*GALLERY section*/
+/* ......../ gallery section /.......... */
 .gallery__wrap {
   h5 {color: $accent; margin-bottom: 30px;}
   position: relative;
@@ -471,7 +471,7 @@ header {
   }
 }
 
-/*ADVANTAGES paragraph*/
+/* ......../ advantages paragraph /.......... */
 .advantages {margin-bottom: 15vw;}
 
 .advantages__wrap {
@@ -485,7 +485,7 @@ header {
   }
 }
 
-/*PRICE section*/
+/* ......../ price section /.......... */
 .plans {background-color: #F8F8F8;}
 
 .plans__wrap {
@@ -570,7 +570,7 @@ header {
   }
 }
 
-/*FIRST-OPEN section*/
+/* ......../ first-open section /.......... */
 .first-open {padding: 5vw 0;}
 
 .first-open__wrap {
@@ -616,7 +616,7 @@ header {
 }
 
 
-/*RECENT ITEMS section*/
+/* ......../ recent-items section /.......... */
 .recent-items__wrap {
   padding: 5vw 0;
   h2 {margin-bottom: 4vw;}
@@ -685,7 +685,7 @@ header {
   transition: all ease 0.6s;
 }
 
-/*REVIEWS section*/
+/* ......../ reviews section /.......... */
 .reviews {background-color: #F8F8F8;}
 
 .reviews__wrap {
@@ -711,7 +711,7 @@ header {
   }
 }
 
-/*FANDOMS section*/
+/* ......../ fandom section /.......... */
 .fandoms__wrap {
   h5 {margin-bottom: 52px;}
   padding: 100px 0;
@@ -728,7 +728,7 @@ header {
   }
 }
 
-/*FOOTER*/
+/* ......../ footer /.......... */
 footer {
   background: #262425;
   color: $white;
@@ -783,7 +783,7 @@ footer {
   width: 100%;
 }
 
-/*ANIMATION*/
+/* ......../ animation /.......... */
 @keyframes entrance {
   0% {
     opacity: 0;
@@ -796,8 +796,7 @@ footer {
   }
 }
 
-/*MEDIA QUERIES*/
-/*Medium*/
+/* ......../ media query /.......... */
 @media screen and (max-width: 1279px) {
   .header__logo {transform: scale(0.7);}
   .gift {display: none;}
