@@ -11,23 +11,35 @@
 <body>
   <header>
     <div class="header__wrap">
-      <nav class="header__catalog nav">
-        <a class="nav-link" href="#">tee club</a>
-        <a class="nav-link" href="#">shop</a>
-        <a class="nav-link" href="#">ghostbusters</a>
-        <a class="nav-link gift" href="#">gift</a>
-      </nav>
-      <div class="header__logo">
-        <a href="#">
-          <img src="assets/svg/logo.svg" alt="">
-        </a>
+      <div class="burger">
+        <input type="checkbox" name="" id="burger">
+        <span class="line-1"></span>
+        <span class="line-1"></span>
+        <span class="line-1"></span>
+        <ul id="menu">
+          <a href="#"><li>tee club</li></a>
+          <a href="#"><li>shop</li></a>
+          <a href="#"><li>ghostbusters</li></a>
+          <a class="li-gift" href="#"><li>gift</li></a>
+        </ul>
       </div>
-      <nav class="header__user nav">
-        <a class="nav-link" href="#">login</a>
-        <a class="nav-link" href="#"><img src="assets/svg/search.svg" alt=""></a>
-        <a class="nav-link" href="#"><img src="assets/svg/wish.svg" alt=""></a>
-        <a class="nav-link" href="#"><img src="assets/svg/buy.svg" alt=""></a>
+      <nav class="header__nav">
+        <div class="nav-left">
+          <a class="nav-link" href="#">tee club</a>
+          <a class="nav-link" href="#">shop</a>
+          <a class="nav-link" href="#">ghostbusters</a>
+          <a class="nav-link gift" href="#">gift</a>
+        </div>
+        <div class="nav-right">
+          <a class="nav-link" href="#">login</a>
+          <a class="nav-link search" href="#"><img src="assets/svg/search.svg" alt=""></a>
+          <a class="nav-link" href="#"><img src="assets/svg/wish.svg" alt=""></a>
+          <a class="nav-link" href="#"><img src="assets/svg/buy.svg" alt=""></a>
+        </div>      
       </nav>
+      <a class="header__logo" href="#">
+        <img src="assets/svg/logo.svg" alt="">
+      </a>
     </div>
   </header>
   <main>
@@ -104,25 +116,19 @@
       </section>
       <section class="gallery">
         <div class="gallery__wrap">
+          <h5>good for</h5>
           <div class="gallery__section">
-            <h5>good for</h5>
-            <h2>every day</h2>
-            <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
-            <div class="img-subsection">
-              <img src="assets/img/ed-1.png" alt="">
-              <img src="assets/img/ed-2.png" alt="">
+            <div class="gallery__headline">
+              <h2>every day</h2>
+              <p>Mauris vestibulum nulla vitae massa lacinia pretium. Aliquam sodales venenatis nunc, et lacinia nunc. </p>
             </div>
-          </div>
-          <div class="gallery__section">
+            <img src="assets/img/ed-1.png" alt="">
+            <img src="assets/img/ed-2.png" alt="">
             <img src="assets/img/ed-3.png" alt="">
             <img src="assets/img/ed-4.png" alt="">
-          </div>
-          <div class="gallery__section">
             <img src="assets/img/ed-5.png" alt="">
             <img src="assets/img/ed-6.png" alt="">
-          </div>
             <img src="assets/img/ed-7.png" alt="">
-          <div class="gallery__section">
             <img src="assets/img/ed-8.png" alt="">
             <img src="assets/img/ed-9.png" alt="">
             <a class="btn" href="#">shop all</a>
